@@ -14,6 +14,7 @@ body{
     margin-right: 10px;
     height: 20px;
     width: 155px;
+    font-weight: 400;
     
 }
 .btn{
@@ -21,7 +22,19 @@ body{
     border-radius: 30px;
     width: 50px;
     height: 30px;
-    
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
+   
+
+}
+.btn:hover{
+    background: #ddf008;
+}
+
+.btn:active{
+    transform: scale(0.97);
+    animation: glow-click 0.4s ease-out;
 }
 form{
     width: 250px;
@@ -37,6 +50,19 @@ form{
 }
 label{
     margin-right: 130px;
+    font-weight: 700;
+}
+marquee{
+
+    width: 100%;
+    height: 40%;
+    background-color: aqua;
+}
+blockquote{
+    font-weight: bolder;
+    font-size: larger;
+    font: 2em;
+    
 }
 
 .form{
@@ -44,3 +70,61 @@ label{
      
 
 }
+
+#form{
+    margin-top: 210px;
+}
+.forgot password{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a[href="#"]:hover{
+    text-decoration: none;
+    color: rgb(226, 209, 23);
+    font-weight: 600;
+}
+
+label:has(input:valid){
+    border-color: green;
+    color: #ddf008;
+    font-weight: 700;
+}
+
+label:has(input:invalid){
+    border-color: red;
+    color: red;
+    border-style: double;
+}
+input:valid{
+    border-color: green;
+}
+input:user-invalid{
+    border-color: red;
+}
+.toggle-eye{
+    height: 10px;
+    width: 18px;
+
+}
+
+.input wrapperID input{
+    padding-right: 40px;
+}
+
+.toggle-eye{
+    position: absolute;
+    right: 10px;
+    top: 18%;
+    transform: translate(-50%);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.input-wrapperID{
+    position: relative;
+    display: inline-block;
+}
+
+    

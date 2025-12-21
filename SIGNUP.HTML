@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RIAT EXAM BANK</title>
+</head>
+
+<body>
+  <form class="form" id="form">
+    <h1>Signup Here</h1>
+    <label>Name:</label>
+    <input type="text" name="username" id="username" class="name" placeholder="Enter your Name here" required
+      minlength="3" maxlength="26"><br><br>
+    <label for="studentID">ID:</label>
+    <div class="input-wrapperID">
+      <input type="password" class="name" id="ID" placeholder="Enter school ID here" required minlength="15"
+        maxlength="17"><br><br>
+      <span>
+        <img src="eye-removebg-preview.png" id="togglePassword" class="toggle-eye" alt="show/hide password">
+      </span>
+    </div>
+    <Label>Email:</Label>
+    <input type="email" name="Email" id="email" class="name" placeholder="Enter your email here" required><br><br>
+    <label for="">Password:</label>
+    <div class="input-wrapperID">
+      <input type="text" class="name" id="password" placeholder="Enter password"><br><br>
+       <span>
+        <img src="eye-removebg-preview.png" id="togglePassword" class="toggle-eye" alt="show/hide password">
+       </span>
+    </div>
+    <label for="">Confirm:</label>
+    <input type="text" class="name" id="Confirm password" placeholder="Enter password">
+    <button type="submit" class="btn">Signup</button><br><br>
+    <a href="#" class="forgot password">forgot password?</a>
+
+  </form>
+   <script>
+  const idInput = document.getElementById('ID');
+  const togglePassword = document.getElementById('togglePassword');
+
+  togglePassword.onclick = function () {
+    const isPassword = idInput.type === 'password';
+    idInput.type = isPassword ? 'text' : 'password';
+  };
+</script>
+
+</body>
+
+</html>
