@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student exam bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <marquee behavior="scroll" direction="right">
+      <blockquote>Your Exams Ready - Search & Download</blockquote>
+    </marquee>
+  </header>
+  <form class="form" onsubmit="return loginUser()">
+    <h1>Student Dashboard</h1>
+    <label>Name:</label>
+    <input type="text" class="name" placeholder="Enter your Name here" required><br><br>
+    <label>ID:</label>
+    <input type="text" class="name" placeholder="Enter school ID here" required><br><br>
+    <Label>Email:</Label>
+    <input type="email" class="name" placeholder="Enter your email here" required><br><br>
+    <label for="">Password:</label>
+    <div class="input-wrapperID">
+      <input type="password" class="name" id="password" placeholder="Enter password"><br><br>
+      <span>
+        <img src="eye-removebg-preview.png" id="togglePassword2" class="toggle-eye" alt="show/hide password">
+      </span>
+    </div>
+    <div id="errorMsg" style="color: rgb(249, 7, 7);"></div>
+    <button type="submit" class="btn">login</button><br><br>
+    Remember me<input type="checkbox">
+
+    <p>don't have an account? <a href="SIGNUP.HTML">sign up</a></p>
+
+  </form>
+  <script src="Exam.js"></script>
+
+</body>
+
+</html>

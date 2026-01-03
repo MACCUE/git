@@ -8,6 +8,7 @@
   <title>RIAT EXAM BANK</title>
 </head>
 
+
 <body>
   <form class="form" id="form">
     <h1>Signup Here</h1>
@@ -40,23 +41,8 @@
     <a href="#" class="forgot password">forgot password?</a>
 
   </form>
-  <script>
-    const idInput = document.getElementById('ID');
-    idInput.type = 'text';        // Change input to show text
-    idInput.value = 'type in correct ID';      // Put text inside input
-    idInput.style.border = 'red'; // Make border red
-
-    const passwordInput = document.getElementById('password');
-    const toggleID = document.getElementById('togglePassword');
-    const togglePassword = document.getElementById('togglePassword2');
-
-    toggleID.onclick = function () {
-      idInput.type = idInput.type === 'password' ? 'text' : 'password';
-    };
-
-    togglePassword.onclick = function () {
-      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
-    };
+  <script src="Exam.js">
+   
   </script>
 
 
